@@ -13,8 +13,9 @@ public class Thing {
     private float latitude;
     private float longitude;
     private int idUsuario;
+    private int image;
 
-    public Thing(String name, String description, int id, float latitude, float longitude, int idUsuario) {
+    public Thing(String name, String description, int id, float latitude, float longitude, int idUsuario,int image ) {
         this.name = name;
         this.description = description;
        // this.date = date;
@@ -22,6 +23,7 @@ public class Thing {
         this.latitude = latitude;
         this.longitude = longitude;
         this.idUsuario = idUsuario;
+        this.image = image;
     }
 
     public String getName() {
@@ -78,5 +80,13 @@ public class Thing {
 
     public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
     }
 }
